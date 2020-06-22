@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>开始使用layui</title>
+  <link rel="stylesheet" href="../layui/css/layui.css">
+  <link rel="stylesheet" href="../layui/css/index.css">
+</head>
+
+<body>
+  <div class="layui-tab">
+    <ul class="layui-tab-title layui-bg-red">
+      <li class="layui-this">标题一</li>
+      <li>标题二</li>
+      <li>标题三</li>
+    </ul>
+    <div class="layui-tab-content">
+      <div class="layui-tab-item layui-show">内容1</div>
+      <div class="layui-tab-item">内容2</div>
+      <div class="layui-tab-item">内容3</div>
+    </div>
+  </div>
+  <i class="layui-icon layui-icon-heart"></i>
+  <button class="layui-btn" lay-submit lay-filter="login">登入</button>
+  <!-- 你的HTML代码 -->
+  <!-- <img src="images/face/3547992.gif" alt=""> -->
+  <!-- 一般用于开发环境 -->
+  <!-- <script src="../layui/layui.js"></script> -->
+  <!-- <script src="../layui/layui.js"></script> -->
+  <!-- <script>
+    //一般直接写在一个js文件中
+
+    // layui.use(["模块一","模块二"])模块加载
+    // layui.use(['layer', 'form'], function () {
+    //   var layer = layui.layer,
+    //   form = layui.form;
+    //   layer.msg('Hello World');
+    //   console.log(layui.layer)
+    // });
+    layui.config({
+      base: './my-module/js/' //你存放新模块的目录，注意，不是layui的模块目录
+    }).use('index',function(){
+      var index = layui.index
+      console.log(index.index(5678))
+    })
+
+  </script> -->
+    <!-- 一般用于线上环境 -->
+    <script src="../layui/layui.all.js"></script>
+    <script src="./demo.js"></script>
+    <script>
+      ! function () {
+        //无需再执行layui.use()方法加载模块，直接使用即可
+        // var form = layui.form,
+        //   layer = layui.layer;
+        //   layer.open({
+        //     anim:6
+        //   });
+        // layer.msg('Hello World');
+
+        // layui.config({
+        //   base:'./my-module/js/'
+        // }).use('index',function(){
+        //   var index = layui.index
+        //   console.log(index.index(564))
+        // })
+        // //…
+        // var obj = 
+        //   {
+        //     key:"用户",
+        //     value:{
+        //       "姓名":"覃雷",
+        //       "age":"50",
+        //       "密码":123456
+        //     }
+        //   }
+        // // 增  改
+        // layui.data('user',obj)
+        //   // 删
+        // layui.data('user',{
+        //   key:"姓名",
+        //   remove:true
+        // })
+        // // 查
+        // console.log(layui.data('user'))
+        // // 查看设备信息
+        // var device = layui.device();
+        // console.log(device)
+
+
+      }();
+      
+    </script>
+  
+</body>
+
+</html>
